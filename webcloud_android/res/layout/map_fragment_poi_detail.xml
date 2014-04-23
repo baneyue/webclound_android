@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layBottomPoiPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/btn_selector"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/btnRoute"
+            android:drawableLeft="@drawable/mdd_selector"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="路线" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/shu_line" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/btn_selector"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/btnSet"
+            android:drawableLeft="@drawable/sz_selector"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="设置" />
+    </LinearLayout>
+</LinearLayout>

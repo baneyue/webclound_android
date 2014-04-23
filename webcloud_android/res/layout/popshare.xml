@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laypopshare"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/ivpopsharesms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_share_bg"
+        android:src="@drawable/pop_share_sms" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ivpopshareweixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_share_bg"
+            android:padding="3dp"
+            android:src="@drawable/pop_share_weixin" />
+
+        <ImageButton
+            android:id="@+id/ivpopshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:background="@drawable/pop_share_bg"
+            android:src="@drawable/theme_two_share" />
+
+        <ImageButton
+            android:id="@+id/ivpopshareyixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@drawable/pop_share_bg"
+            android:src="@drawable/pop_share_yixing" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ivpopsharefriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_share_bg"
+        android:src="@drawable/pop_share_friend" />
+
+</LinearLayout>

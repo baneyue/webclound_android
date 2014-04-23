@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="12" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/map_btn_bottom_selector"
+            android:gravity="center"
+            android:padding="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvMdd"
+                style="@style/smallTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/mdd_selector"
+                android:gravity="center"
+                android:text="目的地"
+                android:textColor="@drawable/text_black_yellow_selector" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shu_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="3dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/map_btn_bottom_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvHome"
+                style="@style/smallTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/hj_selector"
+                android:gravity="center"
+                android:text="回家"
+                android:textColor="@drawable/text_black_yellow_selector" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shu_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="3dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/map_btn_bottom_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvCompany"
+                style="@style/smallTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/sb_selector"
+                android:gravity="center"
+                android:text="上班"
+                android:textColor="@drawable/text_black_yellow_selector" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/shu_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="3dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/map_btn_bottom_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvSet"
+                style="@style/smallTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:drawablePadding="1dp"
+                android:drawableTop="@drawable/sz_selector"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@drawable/text_black_yellow_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

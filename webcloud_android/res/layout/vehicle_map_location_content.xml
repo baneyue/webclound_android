@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 地图普通视图布局，包含普通地图视图上的一系列操纵按钮 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layMap"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mvMap"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/rightPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp" >
+        <ImageButton
+            android:id="@+id/btnZoomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/map_btn_selector"
+            android:padding="4dp"
+            android:src="@drawable/enlarge" />
+
+        <ImageButton
+            android:id="@+id/btnZoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/map_btn_selector"
+            android:padding="4dp"
+            android:src="@drawable/narrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/leftPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:id="@+id/btnSwitchMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/map_btn_selector"
+            android:padding="4dp"/>
+
+        <ImageButton
+            android:id="@+id/btnLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/map_btn_selector"
+            android:padding="4dp"
+            android:src="@drawable/location" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/smallTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拥堵"
+            android:textColor="@color/bg5c5b5a" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="3dp"
+            android:background="@color/font_red" />
+
+        <TextView
+            style="@style/smallTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="缓慢"
+            android:textColor="@color/bg5c5b5a" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="3dp"
+            android:background="@color/font_orange" />
+
+        <TextView
+            style="@style/smallTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="畅通"
+            android:textColor="@color/bg5c5b5a" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="3dp"
+            android:background="@color/font_green" />
+    </LinearLayout>
+
+    <include
+        android:layout_height="wrap_content"
+        layout="@layout/comm_search_result"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/map_btn_bottom"
+        android:gravity="center_vertical" >
+    </LinearLayout>
+
+</FrameLayout>

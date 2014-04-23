@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="margin_xsmall">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_normal">15dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">30dp</dimen>
+    <dimen name="padding_xsmall">5dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_normal">15dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_xlarge">30dp</dimen>
+    <dimen name="text_size_xxsmall">10.5sp</dimen>
+    <dimen name="text_size_xsmall">10.0sp</dimen>
+    <dimen name="text_size_small">14.0sp</dimen>
+    <dimen name="text_size_xmiddle">15.0sp</dimen>
+    <dimen name="text_size_middle">16.5sp</dimen>
+    <dimen name="text_size_normal">17.0sp</dimen>
+    <dimen name="text_size_large">18.5sp</dimen>
+    <dimen name="text_size_xlarge">20.5sp</dimen>
+    <dimen name="text_size_xxlarge">35.0sp</dimen>
+    <dimen name="text_size_xxxlarge">50.0sp</dimen>
+    <dimen name="text_tab_bottom_size">12.0sp</dimen>
+    <dimen name="theme_bg_height">235dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="slidingmenu_right_offset">100dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="traffic_item_height">70dp</dimen>
+</resources>

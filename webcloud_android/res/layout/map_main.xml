@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mvMap"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <!-- 基础布局：头部搜索栏，底部zoom定位按钮栏，基本信息栏，地图切换实时路况栏 -->
+
+    <RelativeLayout
+        android:id="@+id/layBase"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="15dp" >
+
+        <include
+            android:id="@+id/layTempSearch"
+            layout="@layout/comm_search" />
+
+        <LinearLayout
+            android:id="@+id/layRightPanel"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layTempSearch"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp" >
+
+            <ImageButton
+                android:id="@+id/btnTraffic"
+                android:background="@drawable/map_btn_selector"
+                android:padding="4dp"
+                android:src="@drawable/map_traffic_on" />
+
+            <ImageButton
+                android:id="@+id/btnSwitchModel"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/map_btn_selector"
+                android:padding="4dp"
+                android:src="@drawable/map_switch_model" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layLeftBottomPanel"
+            android:layout_above="@+id/layBottom"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <ImageButton
+                android:id="@+id/btnLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/map_btn_selector"
+                android:padding="4dp"
+                android:src="@drawable/location" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRightBottomPanel"
+            android:layout_above="@+id/layBottom"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <ImageButton
+                android:id="@+id/btnZoomin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/map_btn_selector"
+                android:padding="4dp"
+                android:src="@drawable/enlarge" />
+
+            <ImageButton
+                android:id="@+id/btnZoomout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/map_btn_selector"
+                android:padding="4dp"
+                android:src="@drawable/narrow" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

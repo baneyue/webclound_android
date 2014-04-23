@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_btn_pressed"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+	        <ImageView
+	            android:id="@+id/searchIcon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="15dip"
+	            android:background="@drawable/vehicle_search_normal" />
+            
+	        <EditText
+	            android:id="@+id/searchInput"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_toRightOf="@+id/searchIcon"
+	            android:background="@null"
+	            android:layout_marginLeft="15dip"
+	            android:singleLine="true"
+	            android:hint="搜索" >	            
+		        <requestFocus />
+	        </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+    
+	<FrameLayout 
+	    android:id="@+id/listLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/bg_content"
+	    android:visibility="invisible">
+	    <ListView 
+	        android:id="@+id/searchList"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+	</FrameLayout>
+</LinearLayout>

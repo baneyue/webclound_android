@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+        <!--平移： 从右向左从上往下展开显示，原先隐藏与右上角
+         
+        <translate android:interpolator="@android:anim/decelerate_interpolator"
+        android:duration="700"
+        android:fromYDelta="0"
+        android:toYDelta="100%"
+        android:fromXDelta="0"
+        android:toXDelta="100%"
+        android:fillAfter="true"
+        />
+        -->
+        <!-- 由隐藏放大到原大小，从左下角展开 ,然后缩放小的原点-->
+        <scale 
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:fromXScale="0"
+        android:toXScale="1.0"
+        android:fromYScale="0"
+        android:toYScale="1.0"
+        android:pivotX="0"
+        android:pivotY="100%"
+        android:fillAfter="true"
+        android:duration="700"/>
+</set>

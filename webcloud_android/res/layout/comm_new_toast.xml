@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 加载进度页面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layToast"
+    android:layout_gravity="center"
+    android:background="@drawable/tanbg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="8.0dip">
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        style="@style/smallTextView"
+        android:text="提示内容"
+        android:gravity="center"
+        android:textColor="#ffffffff" />
+</LinearLayout>

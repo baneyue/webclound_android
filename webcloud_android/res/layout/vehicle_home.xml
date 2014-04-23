@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dip"
+            android:background="@android:color/white" >
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/vehicle_search_normal" />
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/searchIcon"
+                android:background="@null"
+                android:editable="false"
+                android:hint="搜索" />
+        </RelativeLayout>
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="105dip"
+            android:layout_marginRight="25dip"
+            android:background="@android:color/white">
+	        <ImageView
+	            android:id="@+id/larger"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="2dip"
+	            android:background="@drawable/zoomin" />
+	        <ImageView
+	            android:layout_width="match_parent"
+	            android:layout_height="2dip"
+	            android:layout_margin="3dip"
+	            android:background="@drawable/line"/>
+	
+	        <ImageView
+	            android:id="@+id/smaller"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="2dip"
+	            android:background="@drawable/zoomout" />            
+        </LinearLayout>
+
+<!--         <Button -->
+<!--             android:id="@+id/shot" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_marginBottom="105dip" -->
+<!--             android:layout_marginLeft="20dip" -->
+<!--             android:text="截图" /> -->
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="105dip"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/location" />
+
+        <CheckBox
+            android:id="@+id/traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="75dp"
+            android:button="@null"
+            android:checked="false"
+            android:background="@drawable/traffic"/>
+
+<!--         <CheckBox -->
+<!--             android:id="@+id/navigate" -->
+<!--             android:layout_width="50dip" -->
+<!--             android:layout_height="35dip" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_below="@+id/traffic" -->
+<!--             android:layout_marginRight="20dip" -->
+<!--             android:layout_marginTop="10dp" -->
+<!--             android:background="@android:color/darker_gray" -->
+<!--             android:button="@null" -->
+<!--             android:checked="false" -->
+<!--             android:gravity="center" -->
+<!--             android:text="导航" -->
+<!--             android:textColor="@android:color/black" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip">
+
+            <Button
+                android:id="@+id/near"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-5dip"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="附近" />
+
+            <Button
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dip"
+                android:layout_marginRight="-5dip"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="路线" />
+
+            <Button
+                android:id="@+id/mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dip"
+                android:layout_marginRight="-5dip"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="我的" />
+
+            <Button
+                android:id="@+id/tool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dip"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="工具" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <FrameLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:layout_alignParentBottom="true" />
+        
+    </RelativeLayout>
+</FrameLayout>

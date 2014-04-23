@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 采用相对布局，中间内容高度根据屏幕大小自适应占满整屏幕 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/layNormalMap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/layTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="52.5dip"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layTitle_route"
+                android:layout_width="fill_parent"
+                android:layout_height="52.5dip"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layContent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/layBottom"
+                android:layout_below="@+id/layTitle"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@null"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/vehicle_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!-- 路线查询 输入部分 -->
+
+    <include
+        android:id="@+id/layRouteSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        layout="@layout/vehicle_map_route_search"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layPoiSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="52.5dp"
+        layout="@layout/comm_search_result"
+        android:visibility="gone" />
+</FrameLayout>

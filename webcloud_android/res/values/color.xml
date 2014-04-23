@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="glass">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="gray">#ffC3C7CC</color>
+    <color name="yellow">#fce807</color>
+    <color name="title_text_color">#FFFFFF</color>
+    <color name="banner_text_color">#cdcbd6</color>
+    <color name="index_item_title_text_color">#b6b7c9</color>
+    <color name="login_title_text_color">#004162</color>
+    <color name="login_edit_text_color">#006ca2</color>
+    <color name="login_checkbox_text_color">#5c5c5c</color>
+    <color name="download_item_length_text_color_normal">#6a6a76</color>
+    <color name="transpant">#ffffffff</color>
+    <color name="lightgrayblue">#ff3D7C9B</color>
+    <color name="communicate_name">#37a6d7</color>
+    <color name="communicate_job">#9a9a9a</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="meeting_item_title_text_color">#00aaff</color>
+    <color name="meeting_item_actor_text_color">#575757</color>
+    <color name="item_text_title_color">#00aaff</color>
+    <color name="item_text_des_color">#575757</color>
+    <color name="bottom_text_color">#FFFFFF</color>
+    <color name="transparent_background">#A0000000</color>
+    <color name="group_name_color">#ffF7F7F7</color>
+    <color name="info_title">#0170A8</color>
+    <color name="login_title">#32495E</color>
+    <color name="total">#0e94fb</color>
+    <color name="metro_number_bg">#70181818</color>
+
+    <color name="middle">#ff808080</color>
+    <color name="light_grey">#ff9c9c9c</color>
+    <color name="light_grey_99">#999c9c9c</color>
+    <color name="light_grey_m">#ffe7e7e7</color>
+    <color name="light_brown_red">#ffeeeeee</color>
+    <color name="middle_black">#ff333333</color>
+    <color name="light_yellow">#fffdffdb</color>
+    <color name="white_trans">#00ffffff</color>
+    <color name="light_blue">#ff006fbe</color>
+    <color name="transparent">#00000000</color>
+    <color name="two_alpha_black">#0b000000</color>
+    <color name="deep_alpha_black">#70000000</color>
+    <color name="tts_blue">#ff006fc0</color><!-- 蓝 -->
+    <color name="ver_green">#ffcce8cf</color><!-- 验证码刷新色 -->
+<!-- 	<item type="color" name="comm_bg">@drawable/logo_top</item>
+ -->    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="bg_content">#EDEBEC</color><!-- 内容背景 -->
+    <color name="bg_content2">#e0EDEBEC</color><!-- 内容背景 -->
+    <color name="bg_content_seletor">#ffDDDBDC</color>
+    <color name="bg_content1">#fff8f8f8</color><!-- 内容背景 -->
+    <color name="bg_content_trans">#d3f8f8f8</color><!-- 内容背景 -->
+    <color name="bg_eee">#ffeeeeee</color><!-- 白色底点击背景 -->
+    <color name="bg_location">#ff0a65a7</color><!-- 白色底点击背景 -->
+    <color name="font_black">#ff333333</color><!-- 黑色字体 -->
+    <color name="font_grey">#ff999999</color><!-- 灰色字体 -->
+    <color name="font_light_grey">#ffcccccc</color><!-- 浅灰色字体 -->
+    <color name="font_blue">#ff1477c0</color><!-- 蓝色字体 -->
+    <color name="font_light_blue">#ff439ee1</color><!-- 浅蓝色字体 -->
+    <color name="font_white">#ffffffff</color><!-- 白色字体 -->
+    <color name="font_orange">#ffff9600</color><!-- 橙色字体 -->
+    <color name="font_red">#ffd40000</color><!-- 红色字体 -->
+    <color name="font_green">#ff91c20d</color><!-- 绿色字体 -->
+    <color name="font_light_green">#ff6f9d00</color>
+    <color name="edit_layer">#bb000000</color><!-- 编辑覆盖层 -->
+    <color name="bg2e2e2e">#ff2e2e2e</color><!-- 编辑覆盖层 -->
+    <color name="bg282828">#ff282828</color><!-- 编辑覆盖层2 -->
+    <color name="bg2e2e2e_noalpha">#2e2e2e</color><!-- 编辑覆盖层 -->
+    <color name="bgb99f87">#ffb99f87</color><!-- 宗红色 -->
+    <color name="bgedecec">#ffEDECEC</color><!-- 按钮字体 -->
+    <color name="bg5c4e47">#ff5c4e47</color><!--  -->
+    <color name="bg5c5b5a">#ff5c5b5a</color><!--  -->
+    <color name="bg9a9a9a">#ff9a9a9a</color><!--  -->
+    <color name="bge6e6e6">#ffe6e6e6</color><!-- 圆虚线按钮背景 -->
+    <color name="bg8c8b8b">#8c8b8b</color>
+     <!-- 边界颜色 -->
+    <color name="border">#5c4e47</color>
+    <!-- 头部背景 -->
+    <color name="top_bg">#B99F88</color>
+    <color name="font_grey_dd">#99999999</color><!-- 半透明灰色 -->
+    <color name="zm_color">#949293</color>
+    <color name="zm_bg_color">#d3d3d3</color>
+    <color name="lvehcile_accident">#D3D3D3</color>
+    <color name="lvehcile_back_bg">#833300</color>
+    <color name="fangkuai_color">#4abdcc</color>
+    <color name="themedetail_env_color">#00cc99</color>
+    <color name="themedetail_cooking_color">#f39818</color>
+    <color name="location_top_color">#736357</color>
+    <color name="bg23AFE2">#23AFE2</color>
+    <color name="bgff6400">#ff6400</color>
+    <color name="main_bottom_bg">#90ffffff</color>
+    
+    <!-- 家政模块颜色 -->
+    <color name="house_item_bg">#00CCCC</color>
+    <color name="house_item_bg2">#919191</color>
+    
+    <!-- 扫描条形码 -->
+	<color name="bg_color">#EDEDED</color>
+	<color name="contents_text">#ff000000</color>
+	<color name="encode_view">#ffffffff</color>
+	<color name="help_button_view">#ffcccccc</color>
+	<color name="help_view">#ff404040</color>
+	<color name="result_image_border">#ffffffff</color>
+	<color name="result_minor_text">#ffc0c0c0</color>
+<!-- 	<color name="result_view">#b0000000</color> -->
+	<color name="sbc_header_text">#ff808080</color>
+	<color name="sbc_header_view">#ffffffff</color>
+	<color name="sbc_list_item">#fffff0e0</color>
+	<color name="sbc_layout_view">#ffffffff</color>
+	<color name="sbc_page_number_text">#ff000000</color>
+	<color name="sbc_snippet_text">#ff4b4b4b</color>
+	<color name="share_text">#ff000000</color>
+	<color name="share_view">#ffffffff</color>
+	<color name="status_view">#50000000</color>
+	<color name="status_text">#ffffffff</color>
+<!-- 	<color name="transparent">#00000000</color> -->
+<!-- 	<color name="viewfinder_frame">#ff000000</color> -->
+<!-- 	<color name="viewfinder_laser">#ffff0000</color> -->
+<!-- 	<color name="viewfinder_mask">#60000000</color> -->
+	<color name="header">#58567D</color>
+	<color name="grgray">#686868</color>
+</resources>

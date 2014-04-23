@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laySearch"
+    android:layout_width="fill_parent"
+    android:layout_height="52.5dip"
+    android:layout_alignParentTop="true"
+    android:background="#ffb99f87"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <!-- 车行线路查询头部 返回， 公交，驾车，步行，查询go -->
+
+    <Button
+        android:id="@+id/route_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/back_selector" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnRouteBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_bus"/>
+
+        <Button
+            android:id="@+id/btnRouteCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/icon_car_on"/>
+
+        <Button
+            android:id="@+id/btnRouteWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_walk"/>
+        
+    </LinearLayout>
+    <TextView
+            android:id="@+id/tvRouteTitle"
+            android:text="导航"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/largeTextView"
+            android:textColor="@color/font_white"
+            android:layout_gravity="center_vertical|right"/>
+</FrameLayout>

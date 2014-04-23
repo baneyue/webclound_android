@@ -1,0 +1,106 @@
+{
+"retcode": "0",
+"retmsg": "成功获取菜单及原子列表!",
+"retdata": {
+"menuData": [
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/home_1388644628531.png",
+"name": "Home",
+"package": null,
+"menuType": "local",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": "HomeActivity"
+},
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/contact_1388644665374.png",
+"name": "Mail",
+"package": null,
+"menuType": "local",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": "MailActivity"
+},
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/message_1388644722792.png",
+"name": "Chat",
+"package": null,
+"menuType": "local",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": "ChatActivity"
+},
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/user_1388644816691.png",
+"name": "Contact",
+"package": null,
+"menuType": "local",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": "ContactActivity"
+},
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/chart_1388714562829.png",
+"name": "Chart",
+"package": null,
+"menuType": "local",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": "ChartActivity"
+},
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/home_1388734305470.png",
+"name": "新菜单",
+"package": null,
+"menuType": "local",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": "menuactivity"
+},
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/player_1388716028370.png",
+"name": "Video",
+"package": 16,
+"menuType": "content",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": null
+},
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/user_1388717409932.png",
+"name": "Picture",
+"package": 17,
+"menuType": "content",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": null
+},
+{
+"dataUrl": null,
+"iconUrl": "http://61.191.44.251/app_icons/home_1388734457193.png",
+"name": "新栏目",
+"package": 18,
+"menuType": "content",
+"msg": "本地数据接口，显示该菜单，并调用本地业务配置的数据信息",
+"menuKey": null
+}
+],
+"atomList": [
+{
+"createTime": "2013-09-10T15:05:03",
+"iconUrl": "http://61.191.44.251/app_icons/portfolio.png",
+"name": "邮件",
+"type": "客户端",
+"comments": "邮件的原子能力，供客户端调用"
+},
+{
+"createTime": "2013-09-12T15:05:03",
+"iconUrl": "http://61.191.44.251/app_icons/search.png",
+"name": "二维码",
+"type": "客户端",
+"comments": "二维码的原子能力，供客户端调用"
+}
+],
+"appKey": "899f38bb735b81b7170ac36f99cd9eeb"
+}
+}

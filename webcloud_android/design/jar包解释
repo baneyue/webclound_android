@@ -1,0 +1,25 @@
+jar包说明
+Baidu-SocialShare-SDK-Android-2.0.0.jar  百度三方分享工具
+fastjson-1.1.20.jar alibabajson解析包
+android-support-v4.jar 安卓v3.0以上支持
+httpcore-4.2.jar
+httpclient-4.2.jar
+httpmime-4.2.jar
+MobileProbe.jar 移动数据统计
+asmack.jar 客户端私信聊天工具
+Msc.jar 讯飞语音包
+libmsc.so 讯飞so
+SosoMapsdk_raster_v1.0.3.jar soso地图和街景
+zxing.jar 二维码三方jar包
+yixin_thridpart_app_sdk_v2.0.jar 易信分享三方工具
+universal-image-loader-1.8.6.jar 图片缓存加载
+sun.misc.BASE64Decoder.jar base编码包
+pinyin4j-2.5.0.jar 拼音jar
+mta-sdk-1.5.3.jar 腾讯第三方数据统计包
+ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar 获取电信号码
+libamapv301.so,libamapv301ex.so 高德地图引擎
+Android_Location_V1.0.5.jar 高德地图定位api包
+Android_MAP_2.1.4.jar       高德地图api包
+Android_Services_2.1.4.jar  高德地图api包
+pinyin4j-2.5.0.jar 列表页做拼音排序
+ums.jar 数据统计和应用更新功能

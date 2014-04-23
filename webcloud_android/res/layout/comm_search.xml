@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laySearch"
+    android:layout_width="fill_parent"
+    android:layout_height="55.5dip"
+    android:layout_alignParentTop="true"
+    android:background="#ff282828"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/laySearchInput"
+        style="@style/Fill_W"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:background="@drawable/search_input422" >
+
+        <EditText
+            android:id="@+id/etSearchInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginRight="35.0dip"
+            android:background="@null"
+            android:hint="@string/search_keyword"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/font_black"
+            android:textColorHint="@color/bgb99f87"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_image" />
+
+        <LinearLayout
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" 
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnClear"
+                android:src="@drawable/clear_btn"
+                android:visibility="gone" />
+
+            <View
+                style="@style/VerticalSplitLine"
+                android:layout_width="1dp"
+                android:layout_margin="5dp" />
+
+            <ImageView
+                android:id="@+id/btnVoice"
+                android:src="@drawable/search_edit_voice"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="50.0dip"
+        android:layout_height="30.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5.0dip"
+        android:background="@drawable/search_searchbtn"
+        android:text="@string/search"
+        android:textColor="@color/font_white"
+        android:textSize="12.0sp"
+        android:visibility="gone" />
+
+</LinearLayout>

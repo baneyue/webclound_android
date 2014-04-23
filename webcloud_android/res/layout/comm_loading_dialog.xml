@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 加载进度页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_gravity="center"
+    android:id="@+id/layProgress"
+    android:background="@drawable/tanbg"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+    <ProgressBar
+        android:id="@+id/pbLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        style="@android:style/Widget.ProgressBar.Inverse"/>
+    <TextView
+        android:id="@+id/tvMsg"
+        style="@style/normalTextView"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/pbLoad"
+        android:layout_toLeftOf="@+id/splict"
+        android:text="努力加载中…"
+        android:textColor="#ffffff" />
+    <ImageView
+        android:id="@+id/splict"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/layClose"
+        android:background="@drawable/vertical_line" />
+    <LinearLayout
+        android:id="@+id/layClose"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/guan_selector"
+        android:gravity="center"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp" >
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="right"
+            android:background="@drawable/guan02" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1.5"
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:contentDescription="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_left"
+            android:layout_marginLeft="10sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="10sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="8.5"
+        android:cacheColorHint="@android:color/transparent"
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:divider="@drawable/list_line" >
+    </ListView>
+
+</LinearLayout>

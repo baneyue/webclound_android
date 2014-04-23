@@ -1,0 +1,165 @@
+﻿中央气象台web接口：
+1.一级城市获取
+http://www.weather.com.cn/data/city3jdata/china.html
+2.二级城市获取，通过后缀为一级城市id,得到所有二级城市的短id
+http://www.weather.com.cn/data/city3jdata/provshi/10125.html
+3.通过一级城市id+二级城市短id,获取二级城市下对应的城市列表
+http://www.weather.com.cn/data/city3jdata/station/1012501.html
+4.通过最终的城市id,获取中央气象台提供的天气信息
+http://m.weather.com.cn/data/101250101.html
+5.获取天气图标
+http://m.weather.com.cn/img/c0.gif
+http://m.weather.com.cn/img/b0.gif
+http://www.weather.com.cn/m/i/weatherpic/29x20/d0.gif
+http://www.weather.com.cn/m2/i/icon_weather/29x20/n00.gif
+湖南为例：
+http://www.weather.com.cn/data/city3jdata/china.html
+{
+10101: "北京",
+10102: "上海",
+10103: "天津",
+10104: "重庆",
+10105: "黑龙江",
+10106: "吉林",
+10107: "辽宁",
+10108: "内蒙古",
+10109: "河北",
+10110: "山西",
+10111: "陕西",
+10112: "山东",
+10113: "新疆",
+10114: "西藏",
+10115: "青海",
+10116: "甘肃",
+10117: "宁夏",
+10118: "河南",
+10119: "江苏",
+10120: "湖北",
+10121: "浙江",
+10122: "安徽",
+10123: "福建",
+10124: "江西",
+10125: "湖南",
+10126: "贵州",
+10127: "四川",
+10128: "广东",
+10129: "云南",
+10130: "广西",
+10131: "海南",
+10132: "香港",
+10133: "澳门",
+10134: "台湾"
+}
+http://www.weather.com.cn/data/city3jdata/provshi/10125.html
+{
+10: "岳阳",
+11: "张家界",
+12: "怀化",
+14: "永州",
+15: "湘西",
+01: "长沙",
+02: "湘潭",
+03: "株洲",
+04: "衡阳",
+05: "郴州",
+06: "常德",
+07: "益阳",
+08: "娄底",
+09: "邵阳"
+}
+http://www.weather.com.cn/data/city3jdata/station/1012501.html
+{
+01: "长沙",
+02: "宁乡",
+03: "浏阳",
+04: "马坡岭",
+05: "望城"
+}
+http://m.weather.com.cn/data/101250101.html
+{
+weatherinfo: {
+city: "长沙",
+city_en: "changsha",
+date_y: "2013年12月20日",
+date: "",
+week: "星期五",
+fchh: "11",
+cityid: "101250101",
+temp1: "10℃~2℃",
+temp2: "10℃~3℃",
+temp3: "11℃~4℃",
+temp4: "11℃~5℃",
+temp5: "10℃~5℃",
+temp6: "11℃~5℃",
+tempF1: "50℉~35.6℉",
+tempF2: "50℉~37.4℉",
+tempF3: "51.8℉~39.2℉",
+tempF4: "51.8℉~41℉",
+tempF5: "50℉~41℉",
+tempF6: "51.8℉~41℉",
+weather1: "多云",
+weather2: "多云",
+weather3: "多云",
+weather4: "多云转晴",
+weather5: "晴",
+weather6: "阴转多云",
+img1: "1",
+img2: "99",
+img3: "1",
+img4: "99",
+img5: "1",
+img6: "99",
+img7: "1",
+img8: "0",
+img9: "0",
+img10: "99",
+img11: "2",
+img12: "1",
+img_single: "1",
+img_title1: "多云",
+img_title2: "多云",
+img_title3: "多云",
+img_title4: "多云",
+img_title5: "多云",
+img_title6: "多云",
+img_title7: "多云",
+img_title8: "晴",
+img_title9: "晴",
+img_title10: "晴",
+img_title11: "阴",
+img_title12: "多云",
+img_title_single: "多云",
+wind1: "北风小于3级",
+wind2: "北风小于3级",
+wind3: "北风小于3级",
+wind4: "微风",
+wind5: "微风",
+wind6: "微风",
+fx1: "北风",
+fx2: "北风",
+fl1: "小于3级",
+fl2: "小于3级",
+fl3: "小于3级",
+fl4: "小于3级",
+fl5: "小于3级",
+fl6: "小于3级",
+index: "较冷",
+index_d: "建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。",
+index48: "较冷",
+index48_d: "建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。",
+index_uv: "最弱",
+index48_uv: "最弱",
+index_xc: "适宜",
+index_tr: "适宜",
+index_co: "较舒适",
+st1: "11",
+st2: "1",
+st3: "10",
+st4: "2",
+st5: "11",
+st6: "3",
+index_cl: "适宜",
+index_ls: "基本适宜",
+index_ag: "极不易发"
+}
+}

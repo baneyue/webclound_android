@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layOutboxLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/ivOutboxDrawerImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/email_inbox" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="发件箱"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ivOutboxEmailEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/email_edit" />
+
+        <ImageView
+            android:id="@+id/ivOutboxEmailWrite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/email_write" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvOutbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layOutboxLayoutBottom"
+        android:layout_below="@+id/layOutboxLayoutTop" />
+
+    <LinearLayout
+        android:id="@+id/layOutboxLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvOutboxSelectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvOutboxMarkRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="标记为已读"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvOutboxDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</RelativeLayout>

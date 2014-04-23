@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layGourmet"
+    style="@style/Fill_W"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/laySearch"
+        android:layout_height="52.5dip"
+        android:layout_alignParentTop="true"
+        layout="@layout/comm_search" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/HorizontalSplitLine"
+        android:layout_below="@+id/laySearch" />
+
+    <FrameLayout
+        android:id="@+id/layContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layBottom"
+        android:layout_below="@+id/laySearch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:background="@drawable/home_company_bg"
+                android:id="@+id/btnUseCurr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mylocation"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="8dp"
+                    android:text="使用当前位置" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="当前位置:"
+                        android:textColor="@color/font_black"
+                        android:textColorHint="@color/bgb99f87"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:singleLine="true"
+                        android:text="2222222222222222222222"
+                        android:textColor="@color/font_black"
+                        android:textColorHint="@color/bgb99f87"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/home_company_bg">
+
+                <com.amap.api.maps.MapView
+                    android:id="@+id/mvMap"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/round_bold_map_selector"
+                    android:gravity="center" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layPoiSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/comm_search_result"
+            android:visibility="gone" />
+    </FrameLayout>
+    <!-- 底部布局 -->
+
+    <RelativeLayout
+        android:id="@+id/layBottom"
+        style="@style/Fill_W"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#2e2e2e" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back_selector"
+            android:clickable="true" />
+        <!-- test to speech -->
+
+        <Button
+            android:id="@+id/btnTts"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sound"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="333333"
+            android:textColor="@color/font_white"
+            android:textColorHint="@color/bgb99f87"
+            android:textSize="16.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

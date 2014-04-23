@@ -1,0 +1,29 @@
+一、代码规范
+1.请使用提供的format和template对代码进行格式化和注释，每次提交前必须对代码进行格式化，以防冲突.
+开发工具请统一使用eclipse，并且把codeformatter和codetemplates导入到开发工具java编辑器
+
+2.资源文件中资源id的命名需要和活动中使用到的成员变量名一致，并且统一使用如下格式
+
+tvTextView     -----文本以tv打头
+etEditText     -----编辑文本以et打头
+ivImageView    -----图片以iv打头
+ibtnImageButon -----图片按钮以ibtn打头
+btnButton      -----按钮以btn打头
+layLinearlayout-----各种布局id以lay打头
+总之每种控件都已其字母简写进行打头，自定义控件也不例外
+
+3.访问网络接口统一使用funlib包中的api,见demo
+
+4.常量的定义请定义在define包
+
+二、开发主要事项
+1.开发前请认真查看DemoActivity，做到快捷方便的开发
+学习其中的网络接口请求，图片缓存的使用，系统开发设计的思路；
+后期会不断晚上demo示例，还有许多功能没有介绍，如文件下载上传偏没有介绍
+2.解析json数据：
+首先、要和web端约束好json数据的格式，解析json使用alibaba.jar包的工具，性能优越，api较好用方便
+其次、在各模块中定义与web接口对应的实体bean,放在各模快的model文件夹
+ 然后、创建JsonFriend实例，对对应的实体进行方便的解析
+JsonFriend<Object> JSF = new JsonFriend<Object>(Object.class);
+List<Object> userinfoList = JSF.parseArray(retdata.getString("datalist"));
+JSONObject jsobj = JsonFriend.parseJSONObject("jsongdata");

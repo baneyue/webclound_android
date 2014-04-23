@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="280sp"
+        android:layout_height="200sp"
+        android:layout_weight="1"
+        android:background="#77000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/common_dialog_ok_cancel_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="8sp"
+            android:gravity="center_horizontal"
+            android:text="@string/messagedialog_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+           <TextView
+                android:id="@+id/common_dialog_ok_cancel_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="11" >
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/btnStartEndGp"
+                android:layout_below="@+id/common_dialog_ok_cancel_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:checkedButton="@+id/btnStart"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btnStart"
+                    style="@style/smallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:drawable/btn_radio"
+                    android:checked="false"
+                    android:text="设为起点"
+                    android:textColor="@color/font_white" />
+
+                <RadioButton
+                    android:id="@+id/btnEnd"
+                    style="@style/smallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@android:drawable/btn_radio"
+                    android:checked="false"
+                    android:layout_marginLeft="10dp"
+                    android:text="设为终点"
+                    android:textColor="@color/font_white" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="5sp" >
+
+            <Button
+                android:id="@+id/common_dialog_ok_cancel_ok_btn"
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_weight="0.5"
+                android:background="@drawable/bnt_pop_normal"
+                android:text="@string/messagedialog_ok"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/common_dialog_ok_cancel_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_weight="0.5"
+                android:background="@drawable/bnt_pop_normal"
+                android:text="@string/messagedialog_cancel"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

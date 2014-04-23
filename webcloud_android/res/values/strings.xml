@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电信云平台</string>
+    <string name="action_settings">Settings</string>
+     <string name="hello_world">Hello world!</string>
+    <string name="input_username">请输入手机号</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_producekey">请输入产品编号</string>
+    <string name="btn_login">登录</string>
+    <string name="request_phone_error">手机号不能为空</string>
+	 <string name="request_product_error">请输入产品编号</string>
+	 
+    <string name="app_update">乐搜正在更新</string>
+    <string name="search">搜索</string>
+    <string name="going">完成</string>
+    <string name="dishes_ok">点好了！</string>
+    <string name="dishes_unsign">该店面仅支持电话预约！</string>
+    <string name="order_pay">一键提交</string>
+    <string name="search_keyword">搜索</string>
+    <string name="home">首页</string>
+    <string name="vehicle">车行</string>
+    <string name="housekeeping">家政</string>
+    <string name="gourmet">美食</string>
+    <string name="usercenter">我的</string>
+    <string name="food_ordering">搜索美食</string>
+    <string name="akey_takeaway">一键外卖</string>
+    <string name="theme_recommand">每周壹店</string>
+    <string name="bottom_xingcheng">加入收藏</string>
+    <string name="bottom_dingcan">订餐</string>
+    <string name="bottom_share">分享</string>
+    <string name="seasonal_recipe">吃货专题</string>
+    <string name="food_recommand">每周壹店</string>
+    <string name="show_all_theme_recommand">查看全部主题推荐</string>
+    <string name="show_all_food_recommand">查看全部美食推荐</string>
+    <string name="messagedialog_ok">确定</string>
+    <string name="messagedialog_cancel">取消</string>
+    <string name="messagedialog_title">提示</string>
+    <string name="messagedialog_retry">重试</string>
+    <string name="messagedialog_cancel_modify">舍弃更改</string>
+    <string name="requesting">处理中</string>
+    <string name="network_error">网络连接未成功，请检查网络</string>
+    <string name="json_fail">数据加载未成功</string>
+    <string name="click_reload">点击刷新重新加载</string>
+    <string name="loading">努力加载中…</string>
+    <string name="error_log">数据异常，未知错误</string>
+    <!--刷新，加载-->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    
+    <string name="distance_1">500米</string>
+    <string name="distance_2">1000米</string>
+    <string name="distance_3">5000米</string>
+    <string name="od_1">人均低到高</string>
+    <string name="od_2">人均高到低</string>
+    <string name="od_3">评分高到低</string>
+    <string name="od_4">距离近到远</string>
+    <string name="unlimited">不限</string>
+    
+    <string name="cooking_all">全部</string>
+    <string name="cooking_china">中国菜</string>
+    <string name="cooking_foreign">外国菜</string>
+    <string name="cooking_feature">特色菜</string>
+    <string name="cooking_env">环境</string>
+    
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="pm25_key_lbs">UnmYBZNeXjhuQsxJMZGo</string><!-- lbs申请的appkey -->
+    <string name="soso_key">f726fa9a6cb5f3c9a1385a7bfb827e58</string>
+    <string name="baidu_key">8442dd5b551955e0c779ad4648a7999d</string>
+    <string name="gaode_key">98c6a9ecce0d45a66de2cdab2340e813</string>
+    
+    <string name="check_update">正在检查更新......</string>
+    <string name="check_update_fail">版本更新检查失败，请确认能否访问网络</string>
+    <string name="is_update">检查到新版本,是否升级?</string>
+    <string name="is_update_force">检查到新版本,是否升级?\n\"取消\"将退出客户端</string>
+    <string name="is_update_sdcard_error">下载失败，请确认是否安装SD卡或SD卡存储已满</string>
+    <string name="is_update_neterror">下载失败，网络有故障请先检查网络</string>
+    <string name="loading_text">载入中...</string>
+    
+    <string name="update_text">更新</string>
+    <string name="update_cancel">取消</string>
+    <string name="input_home">输入家的位置</string>
+    <string name="input_company">输入公司位置</string>
+    <string name="show_content_lesozhushou">我的乐搜我的城！用乐搜打造我的城市生活法则——觅食变达人，行车不拥堵，停车有位置，违章秒提醒，更多城市生活功能，乐搜一键搞定！</string>
+    <string name="share_content_main">亲,为你推荐乐搜:搜美食,逛街景,避堵点,查违章,查快递…神器啊,快下载!</string>
+    <string name="share_content_main_friend">乐搜：搜美食，逛街景，避堵点，查违章，查快递…神器啊!</string>
+    
+     <string-array name="email_menu_arry">
+        <item >收件箱</item>
+        <item >发件箱</item>
+<!--         <item >草稿箱</item> -->
+<!--         <item >已删除</item> -->
+<!--         <item >垃圾箱</item> -->
+    </string-array>
+</resources>

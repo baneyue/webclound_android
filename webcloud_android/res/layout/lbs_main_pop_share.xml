@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:paddingTop="6dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ivpopshareweixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/pop_share_weixin"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="微信"
+        android:textColor="@color/white"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ivpopsharesms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/pop_share_sms"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="短信"
+        android:textColor="@color/white"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ivpopshareyixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/pop_share_yixing"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="易信"
+        android:textColor="@color/white"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ivpopsharefriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/pop_share_friend"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="朋友圈"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

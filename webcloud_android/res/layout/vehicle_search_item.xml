@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/searchItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="5dip"
+        android:drawableLeft="@drawable/vehicle_search_normal"
+        android:drawablePadding="10dip"
+        android:textSize="15sp"
+        android:text="湖南省长沙市荷花园电信大厦" />
+</LinearLayout>
