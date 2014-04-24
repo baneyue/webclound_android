@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.webcloud.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mLay"
+    android:padding="5dp"
+    android:background="@drawable/m8">
+    <ImageView 
+        android:id="@+id/ivItemImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher"/>
+    <TextView 
+        android:id="@+id/tvItemTitle"
+        style="@style/TextView_main_item"
+        android:text="demo"/>
+</com.webcloud.widget.SquareLayout>

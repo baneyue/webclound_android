@@ -97,4 +97,10 @@
 <!--         <item >已删除</item> -->
 <!--         <item >垃圾箱</item> -->
     </string-array>
+    
+     <string name="zx">装修</string>
+     <string name="setting">设置</string>
+     <string name="gsjs">公司介绍</string>
+     <string name="zxdt">装修动态</string>
+     <string name="sjtd">设计团队</string>
 </resources>
