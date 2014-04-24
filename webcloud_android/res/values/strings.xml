@@ -100,7 +100,10 @@
     
      <string name="zx">装修</string>
      <string name="setting">设置</string>
+     <string name="back">后退</string>
      <string name="gsjs">公司介绍</string>
      <string name="zxdt">装修动态</string>
      <string name="sjtd">设计团队</string>
+     <string name="head_title">标题</string>
+     <string name="map">地图</string>
 </resources>

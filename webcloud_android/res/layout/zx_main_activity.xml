@@ -11,7 +11,7 @@
         android:gravity="center_vertical"
         android:layout_marginBottom="20dp">
         <TextView 
-            android:id="@+id/mTVzx"
+            android:id="@+id/tvZX"
             style="@style/TextView_main_title"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
@@ -19,7 +19,7 @@
         <Button 
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:id="@+id/mBtnSetting"
+            android:id="@+id/btnSetting"
             android:text="@string/setting"
             style="@style/TextView_main_title"/>
     </RelativeLayout>
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <GridView 
-            android:id="@+id/mGVmain"
+            android:id="@+id/gvMain"
             style="@style/GridView_main">
             
         </GridView>

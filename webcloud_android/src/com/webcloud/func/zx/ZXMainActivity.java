@@ -44,8 +44,8 @@ public class ZXMainActivity extends ThemeStyleActivity {
     }
     
     private void initView() {
-        mBtnSetting = (Button)findViewById(R.id.mBtnSetting);
-        mGVmain = (GridView)findViewById(R.id.mGVmain);
+        mBtnSetting = (Button)findViewById(R.id.btnSetting);
+        mGVmain = (GridView)findViewById(R.id.gvMain);
         datas.clear();
         for (int i = 0; i < ResContants.ZX_ITEM_TITLE.length; i++) {
             Map<String, Object> element = new HashMap<String, Object>();
