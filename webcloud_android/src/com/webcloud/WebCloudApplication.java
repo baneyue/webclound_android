@@ -66,6 +66,7 @@ public class WebCloudApplication extends Application {
     
     @Override
     public void onCreate() {
+        //测试git提交1
         super.onCreate();
         Object modelStyle = ManifestUtil.get(this, ModelStyle.MODELSTYLE);
         Log.d("WebCloudApplication", modelStyle+"");
