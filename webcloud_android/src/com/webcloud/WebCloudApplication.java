@@ -133,6 +133,7 @@ public class WebCloudApplication extends Application {
         super.onTerminate();
         SystemInit.getInstance().destory();
         Log.d("application+++++++++++++++", "application 被回收");
+        Log.d("1111","222");
     }
     
 }
